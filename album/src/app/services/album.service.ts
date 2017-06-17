@@ -4,12 +4,9 @@ import 'rxjs/Rx';
 import {Observable} from 'rxjs/Observable';
 import {PhotoService} from "./photo.service";
 import {Album} from "../models/album";
-import {Photo} from "../models/photo";
-import {forEach} from "@angular/router/src/utils/collection";
 @Injectable()
 export class AlbumService {
   private album: Album[] = [];
-  private photos: Photo[] = [];
 
   constructor(private http: Http,
               private photoService: PhotoService) {
