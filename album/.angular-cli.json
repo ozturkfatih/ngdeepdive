@@ -19,9 +19,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../bower_components/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/navbar-top-fixed.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../bower_components/jquery/dist/jquery.slim.min.js",
+        "../bower_components/tether/dist/js/tether.min.js",
+        "../bower_components/bootstrap/dist/js/bootstrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
