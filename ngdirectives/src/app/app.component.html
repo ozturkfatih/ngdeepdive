@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">{{title}}</div>
+    <div class="col-md-12">
+      <p appBasicHighlight>Style me with basic drictive</p>
+      <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with better drictive</p>
+    </div>
+    <div class="col-md-12" [ngSwitch]="value">
+<p *ngSwitchCase="5">Value is 5</p>
+<p *ngSwitchCase="10">Value is 10</p>
+<p *ngSwitchCase="100">Value is 100</p>
+<p *ngSwitchDefault="">Value is default.</p>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
